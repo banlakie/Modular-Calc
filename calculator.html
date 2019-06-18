@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Modular Calculator</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" type="text/css" href="bootstrap.css"> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script src="calculatorScript.js"></script>  
+
+</head>
+
+<body onload="init()">
+<div class="container">
+   <h2 class="text-center">Modular Calculator</h2>
+</div>
+
+<div class="container text-center">
+   <label for="result">Result: </label> <br>
+   <input type="textbox" id="output" name="output" disabled="true" value=""></input>
+</div>
+
+<div class="container text-center">
+  <div class="row justify-content-md-center">										
+    <div class="col-xs-4  text-center"><button type="button" onclick="getNumber(1)" id="1" name="numberOne" value="1">1</button></div>
+    <div class="col-xs-4  text-center"><button type="button" onclick="getNumber(2)" id="2" name="numberTwo" value="2">2</button></div>
+    <div class="col-xs-4  text-center"><button type="button" onclick="getNumber(3)" id="3" name="numberThree" value="3">3</button></div>
+  </div>
+  <div class="row justify-content-md-center">
+    <div class="col-xs-4  text-center"><button type="button" onclick="getNumber(4)" id="4" name="numberFour" value="4">4</button></div>
+    <div class="col-xs-4  text-center"><button type="button" onclick="getNumber(5)" id="5" name="numberFive" value="5">5</button></div>
+    <div class="col-xs-4  text-center"><button type="button" onclick="getNumber(6)" id="6" name="numberSix" value="6">6</button></div>  
+  </div>
+  <div class="row justify-content-md-center">
+    <div class="col-xs-4  text-center"><button type="button" onclick="getNumber(7)" id="7" name="numberSeven" value="7">7</button></div>
+    <div class="col-xs-4  text-center"><button type="button" onclick="getNumber(8)" id="8" name="numberEight" value="8">8</button></div>
+    <div class="col-xs-4  text-center"><button type="button" onclick="getNumber(9)" id="9" name="numberNine" value="9">9</button></div>  
+  </div>
+  <div class="row justify-content-md-center">
+    <div class="col-xs-4  text-center"><button type="button" onclick="getNumber(0)" id="0" name="numberZero" value="0">0</button></div>
+  </div>
+  
+</div>
+
+<div class="container">
+	<div class="row justify-content-md-center">
+		<button type="button" onclick="getOperand(10)" id="10" name="add" value="+">+</button>
+		<button type="button" onclick="getOperand(11)" id="11" name="multiple" value="*">*</button>
+		<button type="button" onclick="getOperand(12)" id="12" name="divide" value="/">/</button>
+		<button type="button" onclick="equals(13)" id="13" name="result" value="=">=</button>
+	</div>
+	<div class="row justify-content-md-center">
+		<button type="button" onclick="cleanDisplay()" id="clear" name="clear" >C</button>
+	</div>
+</div>
+
+<footer>
+  <p class="text-center">Created by: Eszter Banlaki, 2019</p>
+</footer>
+</body>
+</html> 
